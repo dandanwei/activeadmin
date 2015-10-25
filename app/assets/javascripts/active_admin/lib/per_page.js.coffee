@@ -28,4 +28,4 @@ class ActiveAdmin.PerPage
 $.widget.bridge 'perPage', ActiveAdmin.PerPage
 
 $ ->
-  $('.pagination_per_page select').perPage()
+  $('.pagination_per_page select')
