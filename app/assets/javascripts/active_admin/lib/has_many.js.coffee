@@ -58,10 +58,6 @@ $ ->
 
 init_sortable = ->
   elems = $('.has_many_container[data-sortable]:not(.ui-sortable)')
-  elems.sortable \
-    items: '> fieldset',
-    handle: '> ol > .handle',
-    stop:    recompute_positions
   elems.each recompute_positions
 
 recompute_positions = (parent)->
